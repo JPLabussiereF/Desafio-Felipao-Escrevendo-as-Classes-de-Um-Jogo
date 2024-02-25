@@ -1,14 +1,4 @@
-Instruções para entrega
-# 3️⃣ Escrevendo as classes de um Jogo
-
-**O Que deve ser utilizado**
-
-- Variáveis
-- Operadores
-- Laços de repetição
-- Estruturas de decisões
-- Funções
-- Classes e Objetos
+  # 3️⃣ Escrevendo as classes de um Jogo
 
 ## Objetivo:
 
