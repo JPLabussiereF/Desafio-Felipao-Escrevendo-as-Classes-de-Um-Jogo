@@ -4,6 +4,7 @@ class heroiTipo{
         this.name = name;
         this.age = age;
         this.type = type;
+        
     }
 
     toAttack(){
@@ -14,48 +15,54 @@ class heroiTipo{
 
             case "Assassino":
                 attack = "sua lâmina"
-            break; 
+                console.log(`O ${this.type} atacou usando ${attack}!\n`)
+                break; 
+
+            case "Mago":
+                attack = "sua magia"
+                console.log(`O ${this.type} atacou usando ${attack}!\n`)
+                break;
+
+            case "Lutador":
+                attack = "artes marciais"
+                console.log(`O ${this.type} atacou usando ${attack}!\n`)
+                break;
+
+            case "Atirador":
+                attack = "sua arma"
+                console.log(`O ${this.type} atirou usando ${attack}!\n`)
+                break;
+
+            case "Suporte":
+                attack = "sua habilidade de cura"
+                console.log(`O ${this.type} curou usando ${attack}!\n`)
+                break;
+
+            case "Tanque":
+                attack = "seu escudo"
+                console.log(`O ${this.type} defendeu usando ${attack}!\n`)
+                break;
+
+            default:
+                attack = "seu ataque"
+                console.log(`O ${this.type} atacou usando ${attack}!\n`)
 
         }
-        
-        console.log(`O ${this.type} atacou usando ${attack}!`)
-
     }
-    
 }
 
 const champion1 = new heroiTipo("Talon", 30, "Assassino");
+const champion2 = new heroiTipo("Leblanc", 23, "Mago");
+const champion3 = new heroiTipo("Lee Sin", 27, "Lutador"); 
+const champion4 = new heroiTipo("Caitlyn", 20, "Atirador");
+const champion5 = new heroiTipo("Yuumi", 5, "Suporte");
+const champion6 = new heroiTipo("Braum", 45, "Tanque");
+const champion7 = new heroiTipo("Rek'Sai", 3, "Desconhecido");
 
 champion1.toAttack()
-
-
-
-
-// Assassino
-// Mago;
-// Lutador;
-// Atirador;
-// Controlador ou Suporte;
-// Tanque;
-
-// colocar tipo - mago // etc
-// colocar ataque - tipo do ataque // etc
-
-// além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
-
-// - exibir a mensagem: "o {tipo} atacou usando {ataque}")
-// - aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
-// - e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
-
-// se mago -> no ataque exibir (usou magia)
-// se guerreiro -> no ataque exibir (usou espada)
-// se monge -> no ataque exibir (usou artes marciais)
-// se ninja -> no ataque exibir (usou shuriken)
-
-// ## Saída
-
-// Ao final deve se exibir uma mensagem:
-
-// - "o {tipo} atacou usando {ataque}"
-//   ex: mago atacou usando magia
-//   guerreiro atacou usando espada
+champion2.toAttack()
+champion3.toAttack()
+champion4.toAttack()
+champion5.toAttack()
+champion6.toAttack()
+champion7.toAttack()
