@@ -1,10 +1,18 @@
-// ## Objetivo:
+class heroiTipo{
+    constructor(name, age, type, attack){
 
-// Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
+        this.name = name;
+        this.age = age;
+        this.type = type;
+        this.attack = attack;
+    }
 
-// - nome
-// - idade
-// - tipo (ex: guerreiro, mago, monge, ninja )
+    toAttack(){
+        console.log(`O ${this.type}  atacou usando ${this.attack}`)
+
+    }
+    
+}
 
 // além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
 
